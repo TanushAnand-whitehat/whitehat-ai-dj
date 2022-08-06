@@ -22,14 +22,16 @@ function modelLoaded() {
 }
 
 function gotPoses(results) {
-    if(results.length > 0)
-    console.log(results);
-    rightWristx = results[0].pose.rightWrist.x;
-    rightWristy = results[0].pose.rightWrist.y;
-    leftWristx = results[0].pose.leftWrist.x;
-    leftWristy = results[0].pose.leftWrist.y;
-    console.log("Right Wrist X = " + rightWristx + "Right Wrist Y = " + rightWristy);
-    console.log("Left Wrist X = " + leftWristx + "Left Wrist Y = " + leftWristy);
+    if(results.length > 0) {
+        console.log(results);
+        rightWristx = results[0].pose.rightWrist.x;
+        rightWristy = results[0].pose.rightWrist.y;
+        leftWristx = results[0].pose.leftWrist.x;
+        leftWristy = results[0].pose.leftWrist.y;
+        console.log("Right Wrist X = " + rightWristx + "Right Wrist Y = " + rightWristy);
+        console.log("Left Wrist X = " + leftWristx + "Left Wrist Y = " + leftWristy);
+    }
+    
 }
 
 function draw() {
